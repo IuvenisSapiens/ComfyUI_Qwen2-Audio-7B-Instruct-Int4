@@ -1,0 +1,14 @@
+[project]
+name = "ComfyUI_Qwen2-Audio-7B-Instruct-Int4"
+description = "This is an implementation of [Qwen2-Audio-7B-Instruct-Int4](https://github.com/QwenLM/Qwen2-Audio) by [ComfyUI](https://github.com/comfyanonymous/ComfyUI), including support for text-based queries and audio queries to generate captions or responses."
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["torch", "huggingface_hub", "transformers", "librosa","bitsandbytes"]
+
+[project.urls]
+Repository = "https://github.com/IuvenisSapiens/ComfyUI_Qwen2-Audio-7B-Instruct-Int4"
+
+[tool.comfy]
+PublisherId = "IuvenisSapiens"
+DisplayName = "ComfyUI_Qwen2-Audio-7B-Instruct-Int4"
+Icon = "favicon.ico"

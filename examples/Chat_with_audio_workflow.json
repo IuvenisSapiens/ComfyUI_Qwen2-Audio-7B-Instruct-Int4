@@ -1,0 +1,128 @@
+{
+  "last_node_id": 3,
+  "last_link_id": 1,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Qwen2_AQA",
+      "pos": [
+        -53,
+        -197
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Qwen2_AQA"
+      },
+      "widgets_values": [
+        "Tell me what you hear",
+        "Qwen2-Audio-7B-Instruct-Int4",
+        true,
+        145,
+        "randomize",
+        "D:\\plrm.mp3"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "DisplayText",
+      "pos": [
+        368,
+        -296
+      ],
+      "size": [
+        343.6396431141859,
+        287.75470730929993
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 1,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DisplayText"
+      },
+      "widgets_values": [
+        "",
+        "I heard a female speaking in Mandarin saying '十六岁时他拒绝了美国耶鲁大学二十万美元的奖学金和住房，二十六岁时他拒绝了欧洲数学协会决定颁发给他的百万美元奖金。四十岁时他再次拒绝了千禧年数学大奖和一百万美元奖金，他就是佩雷尔曼。不仅是一名卓越的数学家，同时也是一位与世隔绝迷一样的隐士。'"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Note",
+      "pos": [
+        -41,
+        -316
+      ],
+      "size": [
+        376.78068650574255,
+        77.65381124989506
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "如果`source_audio_path`为空，系统将转换到基于文本的问答模式。\n\nShould `source_audio_path` be blank, the system will transition into text-based question-and-answer mode.\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.7088742511245865,
+      "offset": [
+        118.69255485444806,
+        374.8596887006535
+      ]
+    }
+  },
+  "version": 0.4
+}

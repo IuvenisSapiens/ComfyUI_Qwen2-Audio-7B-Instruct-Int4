@@ -1,0 +1,128 @@
+{
+  "last_node_id": 3,
+  "last_link_id": 1,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "Qwen2_AQA",
+      "pos": [
+        -53,
+        -197
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            1
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Qwen2_AQA"
+      },
+      "widgets_values": [
+        "Quantum Group",
+        "Qwen2-Audio-7B-Instruct-Int4",
+        false,
+        1728,
+        "randomize",
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "type": "DisplayText",
+      "pos": [
+        368,
+        -296
+      ],
+      "size": [
+        343.6396431141859,
+        287.75470730929993
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 1,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DisplayText"
+      },
+      "widgets_values": [
+        "",
+        "Quantum groups are mathematical structures that generalize the concept of a group to quantum systems. They were first introduced by Alain Connes and his collaborators in the 1980s as a way to describe the symmetries of quantum systems in a more general and powerful framework than classical groups.\nIn a quantum group, the operations of composition and inversion are replaced by more general quantum operations called \"quasitriads.\" These quasitriads satisfy certain properties, such as associativity and the existence of an identity element, which make them into a quantum algebraic structure.\nQuantum groups have been applied in many areas of physics, including quantum mechanics, condensed matter physics, and high-energy physics. They have also found applications in mathematics, computer science, and other fields. Some of the most well-known examples of quantum groups include the Heisenberg group, the Lie group U(1), and the quantum group SL(2,C)."
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Note",
+      "pos": [
+        -41,
+        -316
+      ],
+      "size": [
+        376.78068650574255,
+        77.65381124989506
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "如果`source_audio_path`为空，系统将转换到基于文本的问答模式。\n\nShould `source_audio_path` be blank, the system will transition into text-based question-and-answer mode.\n"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.7088742511245865,
+      "offset": [
+        118.69255485444806,
+        374.8596887006535
+      ]
+    }
+  },
+  "version": 0.4
+}

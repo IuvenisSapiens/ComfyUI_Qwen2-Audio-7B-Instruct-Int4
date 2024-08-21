@@ -1,0 +1,5 @@
+torch
+huggingface_hub
+bitsandbytes
+librosa
+transformers.zip
