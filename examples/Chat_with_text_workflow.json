@@ -1,63 +1,34 @@
 {
-  "last_node_id": 3,
-  "last_link_id": 1,
+  "last_node_id": 24,
+  "last_link_id": 23,
   "nodes": [
     {
-      "id": 1,
-      "type": "Qwen2_AQA",
-      "pos": [
-        -53,
-        -197
-      ],
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            1
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Qwen2_AQA"
-      },
-      "widgets_values": [
-        "Quantum Group",
-        "Qwen2-Audio-7B-Instruct-Int4",
-        false,
-        1728,
-        "randomize",
-        ""
-      ]
-    },
-    {
-      "id": 2,
+      "id": 24,
       "type": "DisplayText",
-      "pos": [
-        368,
-        -296
-      ],
+      "pos": {
+        "0": -897,
+        "1": -1569,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
       "size": [
-        343.6396431141859,
-        287.75470730929993
+        463.06062559556005,
+        226.83306135513317
       ],
       "flags": {},
-      "order": 2,
+      "order": 1,
       "mode": 0,
       "inputs": [
         {
           "name": "text",
           "type": "STRING",
-          "link": 1,
+          "link": 23,
           "widget": {
             "name": "text"
           }
@@ -76,39 +47,67 @@
       },
       "widgets_values": [
         "",
-        "Quantum groups are mathematical structures that generalize the concept of a group to quantum systems. They were first introduced by Alain Connes and his collaborators in the 1980s as a way to describe the symmetries of quantum systems in a more general and powerful framework than classical groups.\nIn a quantum group, the operations of composition and inversion are replaced by more general quantum operations called \"quasitriads.\" These quasitriads satisfy certain properties, such as associativity and the existence of an identity element, which make them into a quantum algebraic structure.\nQuantum groups have been applied in many areas of physics, including quantum mechanics, condensed matter physics, and high-energy physics. They have also found applications in mathematics, computer science, and other fields. Some of the most well-known examples of quantum groups include the Heisenberg group, the Lie group U(1), and the quantum group SL(2,C)."
+        "Quantum groups are mathematical structures that generalize the concept of a group to quantum systems. They were first introduced by Alain Connes and his collaborators in the 1980s as a way to describe the symmetries of quantum systems using noncommutative algebraic techniques.\nIn classical physics, a group is a set of elements with an operation that satisfies certain properties such as associativity and the existence of an identity element. In quantum mechanics, these properties are replaced by more general ones such as associativity and the existence of a unitary representation.\nQuantum groups are defined as Hopf algebras, which are a type of algebra equipped with additional structure such as a comultiplication and a counit. These structures allow for the definition of a braiding between different quantum states, which is a fundamental aspect of quantum mechanics.\nQuantum groups have been applied in many areas of physics, including condensed matter physics, high-energy physics, and quantum information theory. They also have connections to other fields such as number theory and algebraic geometry."
       ]
     },
     {
-      "id": 3,
-      "type": "Note",
-      "pos": [
-        -41,
-        -316
-      ],
+      "id": 23,
+      "type": "Qwen2_AQA",
+      "pos": {
+        "0": -1263,
+        "1": -1548,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
       "size": [
-        376.78068650574255,
-        77.65381124989506
+        344.8496374347892,
+        182.84825501491423
       ],
       "flags": {},
-      "order": 1,
+      "order": 0,
       "mode": 0,
+      "inputs": [
+        {
+          "name": "source_audio_path",
+          "type": "PATH",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            23
+          ],
+          "slot_index": 0,
+          "shape": 3
+        }
+      ],
       "properties": {
-        "text": ""
+        "Node name for S&R": "Qwen2_AQA"
       },
       "widgets_values": [
-        "如果`source_audio_path`为空，系统将转换到基于文本的问答模式。\n\nShould `source_audio_path` be blank, the system will transition into text-based question-and-answer mode.\n"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
+        "Quantum Group",
+        "Qwen2-Audio-7B-Instruct-Int4",
+        false,
+        494,
+        "randomize"
+      ]
     }
   ],
   "links": [
     [
-      1,
-      1,
+      23,
+      23,
       0,
-      2,
+      24,
       0,
       "STRING"
     ]
@@ -119,8 +118,8 @@
     "ds": {
       "scale": 1.7088742511245865,
       "offset": [
-        118.69255485444806,
-        374.8596887006535
+        1320.3815851279649,
+        1663.4557917674679
       ]
     }
   },

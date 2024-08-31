@@ -10,7 +10,7 @@ This is an implementation of [Qwen2-Audio-7B-Instruct-Int4](https://github.com/Q
 
 ![Chat_with_text_workflow preview](examples/Chat_with_text_workflow.png)
 
-- **Video Query**: When a user uploads an audio file, the system can analyze the content and generate a detailed caption or a summary of the entire audio. For example, "Tell me what you hear in this audio clip."
+- **Audio Query**: When a user uploads an audio file, the system can analyze the content and generate a detailed caption or a summary of the entire audio. For example, "Tell me what you hear in this audio clip."
 
 ![Chat_with_audio_workflow preview](examples/Chat_with_audio_workflow.png)
 

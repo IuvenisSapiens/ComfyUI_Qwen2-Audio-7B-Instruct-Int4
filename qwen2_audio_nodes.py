@@ -28,7 +28,7 @@ class Qwen2_AQA:
                 "seed": ("INT", {"default": -1}),  # add seed parameter, default is -1
             },
             "optional": {
-                "source_audio_path": ("STRING",),
+                "source_audio_path": ("PATH",),
             },
         }
 
@@ -136,19 +136,12 @@ class Qwen2_AQA:
                 generate_ids = generate_ids[:, inputs.input_ids.size(1) :]
                 # raise ValueError("Either audio or text must be provided")
 
-            # offload model to CPU
-            # self.model = self.model.to(torch.device("cpu"))
-            # self.model.eval()
-
             response = self.processor.batch_decode(
                 generate_ids,
                 skip_special_tokens=True,
                 clean_up_tokenization_spaces=False,
             )[0]
 
-            # offload model to GPU
-            # self.model = self.model.to(torch.device("cpu"))
-            # self.model.eval()
             if not keep_model_loaded:
                 del self.processor  # release tokenizer memory
                 del self.model  # release model memory
