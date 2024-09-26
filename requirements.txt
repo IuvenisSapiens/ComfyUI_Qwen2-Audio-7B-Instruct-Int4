@@ -2,4 +2,4 @@ torch
 huggingface_hub
 bitsandbytes
 librosa
-git+https://github.com/huggingface/transformers
+transformers>=4.45.0
